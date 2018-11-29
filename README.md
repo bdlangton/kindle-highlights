@@ -80,12 +80,13 @@ kindle.highlights_for("B005CQ2ZE6")
   <KindleHighlights::Highlight:0x007fc4e7e03ea0
     @asin="B005CQ2ZE6",
     @text="One of the most dangerous things you can believe in this world is that technology is neutral.",
+    @note="This is one of my favorite quotes."
     @location="197"
   >
 ]
 ```
 
-Each `Highlight` object has the book's `asin`, the `text` of the highlight, and it's `location` as attributes:
+Each `Highlight` object has the book's `asin`, the `text` of the highlight, a `note` that the user made, and it's `location` as attributes:
 
 ```ruby
 highlight = kindle.highlights_for("B005CQ2ZE6").first
@@ -94,6 +95,8 @@ highlight.asin
 #=> "B005CQ2ZE6"
 highlight.text
 #=> "One of the most dangerous things you can believe in this world is that technology is neutral."
+highlight.note
+#=> "This is one of my favorite quotes."
 highlight.location
 #=> "197"
 ```

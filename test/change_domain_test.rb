@@ -85,6 +85,12 @@ class ChangeDomainTest < Minitest::Test
                     Destiny is not born of decision; it is born of uncontrollable circumstances.
                   </span>
                 </div>
+                <div id="note-QUdPVFNVM0E3Vk1PQzpCMDAwWFVBRVRZOjQ1ODIwOkhJR0hMSUdIVA==" class="a-row a-spacing-top-base kp-notebook-note kp-notebook-selectable">
+                  <span id="note-label" class="a-size-small a-color-secondary">Note:
+                    <span class="a-letter-space"></span>
+                  </span>
+                  <span id="note" class="a-size-base-plus a-color-base">This is a great quote</span>
+                </div>
               </div>
             </div>
           </div>

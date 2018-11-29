@@ -86,9 +86,9 @@ module KindleHighlights
 
     def login_via_mechanize
       signin_page = mechanize_agent.get(@kindle_login_page)
-      signin_form = signin_page.form(SIGNIN_FORM_IDENTIFIER)
-      signin_form.email = email_address
-      signin_form.password = password
+      signin_form = signin_page.form_with :name => SIGNIN_FORM_IDENTIFIER
+      signin_form.field_with(:name => "email").value = email_address
+      signin_form.field_with(:name => "password").value = password
       mechanize_agent.submit(signin_form)
     end
 

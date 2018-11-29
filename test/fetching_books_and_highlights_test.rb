@@ -34,6 +34,7 @@ class FetchingBooksAndHighlightsTest < Minitest::Test
     highlight = highlights.first
     assert_equal "306", highlight.location
     assert_equal "Destiny is not born of decision; it is born of uncontrollable circumstances.", highlight.text
+    assert_equal "This is a great quote", highlight.note
     assert_equal "B000XUAETY", highlight.asin
   end
 
@@ -101,6 +102,12 @@ class FetchingBooksAndHighlightsTest < Minitest::Test
                   <span id="highlight" class="a-size-base-plus a-color-base">
                     Destiny is not born of decision; it is born of uncontrollable circumstances.
                   </span>
+                </div>
+                <div id="note-QUdPVFNVM0E3Vk1PQzpCMDAwWFVBRVRZOjQ1ODIwOkhJR0hMSUdIVA==" class="a-row a-spacing-top-base kp-notebook-note kp-notebook-selectable">
+                  <span id="note-label" class="a-size-small a-color-secondary">Note:
+                    <span class="a-letter-space"></span>
+                  </span>
+                  <span id="note" class="a-size-base-plus a-color-base">This is a great quote</span>
                 </div>
               </div>
             </div>
